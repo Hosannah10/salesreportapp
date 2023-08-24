@@ -187,11 +187,13 @@ var uniquesemo = uniques.map((string)=>JSON.parse(string))
 
 //Benchmark
  var other = garri?.OTHERS?.map(x => x)
+ //var detail = garri?.DETAILING?.map(x => x);
+ //console.log(detail)
  const others = []
  if (other) {
   others.push(...other)
 }
- //console.log(others)
+ console.log(others)
  const rice = others.reduce((acc, curr) => {
   if (!acc[curr.visit_type]) {
     acc[curr.visit_type] = [];
@@ -215,28 +217,23 @@ var uniquesemo = uniques.map((string)=>JSON.parse(string))
      acc[curr.name].push(curr.business_name);
      return acc;
    }, {});
-     //console.log(egg)
+     console.log(egg)
      var eggroll = [egg]
      //console.log(eggroll)
       //  var dell = Object.values(egg);
       //  console.log(dell) 
       
  //Active unique customers visited
- var sell = garri?.SALES?.map(x => x) 
- //console.log(sell)
- var order = garri?.ORDER?.map(x=>x)
- //console.log(order)
+ var collect = garri?.COLLECTIONS?.map(x => x) 
+ //console.log(collect)
+ 
  const values = [];
 
-    if (sell) {
-      values.push(...sell);
+    if (collect) {
+      values.push(...collect);
     }
-
-    if (order) {
-      values.push(...order);
-    }
-   //console.log(values) 
-
+    //console.log(values)
+     
  const akpu = values.reduce((acc, curr) => {
   if (!acc[curr.visit_type]) {
     acc[curr.visit_type] = [];
@@ -266,7 +263,7 @@ var uniquesemo = uniques.map((string)=>JSON.parse(string))
     // var eg = Object.values(egusi)
     // console.log(eg)
     var soup = [egusi]
-    //console.log(soup)
+    console.log(soup)
    
       const a1 = eggroll.map((obj) => {
         const secondObj = soup.find((item) => [item].forEach(x=>x) === [obj].forEach(x=>x));
@@ -307,7 +304,7 @@ var uniquesemo = uniques.map((string)=>JSON.parse(string))
    }, {});
      //console.log(egusi2)
     var soup2 = [egusi2]
-    //console.log(soup2)
+    console.log(soup2)
    
       const b1 = eggroll.map((obj) => {
         const secondObj = soup2.find((item) => [item].forEach(x=>x) === [obj].forEach(x=>x));
@@ -333,15 +330,20 @@ var uniquesemo = uniques.map((string)=>JSON.parse(string))
 
 
 //Inactive unique customers visited
-var collect = garri?.COLLECTIONS?.map(x => x);
-//console.log(collect)
+var sell = garri?.SALES?.map(x => x);
+//console.log(sell)
+// var order = garri?.ORDER?.map(x=>x)
+//console.log(order)
 //var detail = garri?.DETAILING?.map(x => x);
 
 const values2 = [];
-if (collect) {
-  values2.push(...collect);
+if (sell) {
+  values2.push(...sell);
 }
-
+//  if (order) {
+//        values2.push(...order);
+//      }
+   
     // if (detail) {
     //   values2.push(...detail);
     // }
@@ -377,7 +379,7 @@ const chicken = values2.reduce((acc, curr) => {
   }, {});
     //console.log(meat)
     var stew = [meat];
-    //console.log(stew)
+    console.log(stew)
     const a2 = eggroll.map((obj) => {
       const secondObj = stew.find((item) => [item].forEach(x=>x) === [obj].forEach(x=>x));
       const newObj = { ...secondObj };
@@ -413,7 +415,7 @@ const meat2 = goated2.reduce((acc, curr) => {
 }, {});
   //console.log(meat2)
   var stew2 = [meat2];
-  //console.log(stew)
+  console.log(stew2)
   const b2 = eggroll.map((obj) => {
     const secondObj = stew2.find((item) => [item].forEach(x=>x) === [obj].forEach(x=>x));
     const newObj = { ...secondObj };
@@ -493,7 +495,7 @@ var uniquetm = unique.map((string)=>JSON.parse(string))
 
 
 
-    //offsite unique customers visited
+  //offsite unique customers visited
   var goal2 = shoot[1]
   const goals2 = []
   if (goal2) {
@@ -600,7 +602,7 @@ const output = tm.reduce((acc, curr) => {
     acc[curr.name].push(curr.business_name);
     return acc;
   }, {});
-   console.log(mamaput);
+   //console.log(mamaput);
    var madam = [mamaput];
     //var mama = Object.values(mamaput)
      //console.log(mama)
