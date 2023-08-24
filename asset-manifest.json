@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/salesreportapp/static/css/main.77633f35.css",
+    "main.js": "/salesreportapp/static/js/main.0989b5ec.js",
+    "static/js/787.3289d41a.chunk.js": "/salesreportapp/static/js/787.3289d41a.chunk.js",
+    "index.html": "/salesreportapp/index.html",
+    "main.77633f35.css.map": "/salesreportapp/static/css/main.77633f35.css.map",
+    "main.0989b5ec.js.map": "/salesreportapp/static/js/main.0989b5ec.js.map",
+    "787.3289d41a.chunk.js.map": "/salesreportapp/static/js/787.3289d41a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77633f35.css",
+    "static/js/main.0989b5ec.js"
+  ]
+}
